@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme without action Bar-->
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <!-- Base application theme.-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+       <!-- Customize your theme here. -->
+        <!--<item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>-->
+        <item name="actionBarTheme">@style/MyActionBarTheme</item>
+    </style>
+    <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:fontFamily">@font/grand_hotel</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="MyActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/grand_hotel</item>
+        <item name="colorPrimary">@android:color/background_light</item>
+        <item name="colorPrimaryDark">@android:color/background_light</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>
