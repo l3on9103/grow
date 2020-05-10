@@ -29,12 +29,17 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    
+
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'com.google.firebase:firebase-core:11.8.0'
     implementation 'com.google.firebase:firebase-database:11.8.0'
     implementation 'com.google.firebase:firebase-storage:11.8.0'
     implementation 'com.google.firebase:firebase-auth:11.8.0'
+
+    //The below dependencies let the user select country code and flag
+    implementation 'com.hbb20:ccp:2.1.9'
+    implementation 'pub.devrel:easypermissions:0.4.0'
+
     implementation 'com.firebaseui:firebase-ui-database:3.2.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
