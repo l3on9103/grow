@@ -27,4 +27,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("USER_NAME","Mr. X Y Z");
         startActivity(intent);
     }
+    public void login(View view){
+
+    }
 }

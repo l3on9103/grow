@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "445169175440",
+    "firebase_url": "https://grow-5bad4.firebaseio.com",
+    "project_id": "grow-5bad4",
+    "storage_bucket": "grow-5bad4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445169175440:android:023d6ac2f9a3b6727f0115",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445169175440-3gufp264spgn651j31jsf6bkes81fn8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiTXO1UUZtK7E35v0ozoew3WfScONbBbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445169175440-3gufp264spgn651j31jsf6bkes81fn8r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
