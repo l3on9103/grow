@@ -73,7 +73,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     }
                 } else {
                     phoneNumber = ccp.getFullNumberWithPlus();
-                    if(phoneNumber.equals("")){
+                    if(!phoneNumber.equals("")){
                         loadingBar.setTitle("Phone Number Verification");
                         loadingBar.setMessage("Please wait, while we verify your phone number");
                         loadingBar.setCanceledOnTouchOutside(false);
