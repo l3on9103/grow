@@ -72,6 +72,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         signInWithPhoneAuthCredential(credential);
                     }
                 } else {
+
                     phoneNumber = ccp.getFullNumberWithPlus();
                     if(!phoneNumber.equals("")){
                         loadingBar.setTitle("Phone Number Verification");
@@ -124,6 +125,16 @@ public class RegistrationActivity extends AppCompatActivity {
             }
         };
     }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
+        if(firebaseUser !=null){
+            Intent homeIntent = new Intent(RegistrationActivity.this, MainActivity.class);
+            startActivity(homeIntent);
+            finish();
+        }
+    }
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -145,7 +156,12 @@ public class RegistrationActivity extends AppCompatActivity {
                     }
                 });
     }
-    private void sendUserToMainActivity(){
+    public void sendUserToMainActivity(){
+        Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
+        startActivity(intent);
+
+    }
+    public void sendUserToMainActivity(View view){
         Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);
         startActivity(intent);
 

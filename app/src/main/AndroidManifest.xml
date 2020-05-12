@@ -10,7 +10,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
-        <activity android:name="com.example.grow.RegistrationActivity"
+        <activity
+            android:name="com.example.grow.NotificationsActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.example.grow.SettingsActivity"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.example.grow.RegistrationActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,8 +31,7 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name="com.example.grow.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
