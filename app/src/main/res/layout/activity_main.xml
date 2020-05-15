@@ -16,6 +16,15 @@
         <include layout="@layout/layout_top_tabs"/>
     </RelativeLayout>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="706dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_below="@+id/relLayout1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="match_parent"

@@ -2,6 +2,8 @@ package com.example.grow;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     private BottomNavigationView navView;
+    private RecyclerView myContactsList;
 
 
     @Override
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        myContactsList = findViewById(R.id.contact_list);
+        myContactsList.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
     }
     /*@Override
