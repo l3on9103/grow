@@ -19,4 +19,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/search_user_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:gravity="center_horizontal"
+        android:hint="Search"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/find_friends_list"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/find_friends_list"
+        android:layout_width="match_parent"
+        android:layout_height="706dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_below="@+id/relLayout1"
+        app:layout_constraintTop_toTopOf="@+id/welcome_mesage">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
