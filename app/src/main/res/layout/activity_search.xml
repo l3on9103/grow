@@ -7,7 +7,7 @@
     tools:context="com.example.grow.SearchActivity">
 
     <TextView
-        android:id="@+id/welcome_mesage"
+        android:id="@+id/welcome_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="181dp"
@@ -41,7 +41,7 @@
         android:layout_height="706dp"
         android:layout_above="@+id/nav_view"
         android:layout_below="@+id/relLayout1"
-        app:layout_constraintTop_toTopOf="@+id/welcome_mesage">
+        app:layout_constraintTop_toTopOf="@+id/welcome_message">
 
     </androidx.recyclerview.widget.RecyclerView>
 
